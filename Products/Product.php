@@ -19,10 +19,12 @@ abstract class Product {
         $this->category = $category;
     }
 
-    
+    public function getInfo() : string {
+        return "de info";
+    }
 
     // Getters
-    public function getName(): string {
+    public function getName() : string {
         return $this->name;
     }
 

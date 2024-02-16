@@ -3,14 +3,14 @@
 namespace Products;
 
 class ProductList {
-    private array $products = array();   
+    private $products = array();
     
-    public function addProduct(product $product) {
-        array_push($products, $product);
+    public function addProduct(Product $product) {
+        array_push($this->products, $product);
     }
 
     public function getProducts() {
-        return $products;
+        return $this->products;
     }
 }
 
